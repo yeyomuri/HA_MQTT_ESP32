@@ -1,0 +1,5 @@
+  - platform: mqtt
+    unique_id: "binary_sensor.PIR"
+    name: 'Motion'
+    state_topic: 'office/motion/status'
+    device_class: Vibration

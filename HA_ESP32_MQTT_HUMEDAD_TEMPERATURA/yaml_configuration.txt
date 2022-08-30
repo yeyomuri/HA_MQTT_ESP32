@@ -1,0 +1,13 @@
+sensor:
+  - platform: mqtt
+    name: "Temperature"
+    state_topic: "casa/habitacion/sensorTemperatura"
+    qos: 0
+    unit_of_measurement: "ºC"
+
+
+  - platform: mqtt
+    name: "Humidity"
+    state_topic: "casa/habitacion/sensorHumedad"
+    qos: 0
+    unit_of_measurement: "%"

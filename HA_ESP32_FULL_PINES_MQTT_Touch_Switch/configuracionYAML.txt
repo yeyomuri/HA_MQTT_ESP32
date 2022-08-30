@@ -1,0 +1,49 @@
+# Sensores binarios
+binary_sensor:
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_pared_puerta_01_mqtt_01_habitacion_guadalupe_interior"
+    name: "touch1_pared_habitacion_guadalupe"
+    state_topic: "casa/banio/touch"
+    device_class: Vibration
+    
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_pared_puerta_02_mqtt_01_habitacion_guadalupe_interior"
+    name: "touch2_pared_habitacion_guadalupe"
+    state_topic: 'casa/sala/touch'
+    device_class: Vibration
+
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_pared_puerta_01_mqtt_01_habitacion_padres_interior"
+    name: "touch1_pared_habitacion_padres"
+    state_topic: 'casa/habitacion/touch'
+    device_class: Vibration
+    
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_pared_puerta_02_mqtt_01_habitacion_padres_interior"
+    name: "touch2_pared_habitacion_padres"
+    state_topic: "casa/cocina/touch"
+    device_class: Vibration
+    
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_pared_entrada_00_mqtt_01_cocina_interior"
+    name: "touch_pared_entrada_concina"
+    state_topic: "casa/comedor/touch"
+    device_class: Vibration
+
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_pared_ventana_00_mqtt_01_sala_interior"
+    name: "touch_pared_ventana_sala"
+    state_topic: "casa/patio/touch"
+    device_class: Vibration
+    
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_pared_patio_00_mqtt_01_comedor_interior"
+    name: "touch_pared_patio_comedor"
+    state_topic: "casa/jardin/touch"
+    device_class: Vibration
+    
+  - platform: mqtt
+    unique_id: "binary_sensor.touch_puerta_00_mqtt_01_banio_interior"
+    name: "touch_puerta_banio"
+    state_topic: "casa/garaje/touch"
+    device_class: Vibration
