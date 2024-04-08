@@ -1,0 +1,113 @@
+mqtt:
+  switch:
+    - unique_id: terraza_medio
+      name: 'Terraza medio'
+      state_topic: 'casa/terraza/medio'
+      command_topic: 'casa/terraza/medio'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: terraza_derecha
+      name: 'Terraza derecha'
+      state_topic: 'casa/terraza/derecha'
+      command_topic: 'casa/terraza/derecha'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: banio
+      name: 'Banio'
+      state_topic: 'casa/banio'
+      command_topic: 'casa/banio'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: sala_banio
+      name: 'Sala banio'
+      state_topic: 'casa/sala/banio'
+      command_topic: 'casa/sala/banio'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: sala_chimenea_derecha 
+      name: 'Sala chimenea derecha'
+      state_topic: 'casa/sala/chimenea/derecha'
+      command_topic: 'casa/sala/chimenea/derecha'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: comedor_1
+      name: 'Comedor 1'
+      state_topic: 'casa/comedor/1'
+      command_topic: 'casa/comedor/1'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: comedor_2
+      name: 'Comedor 2'
+      state_topic: 'casa/comedor/2'
+      command_topic: 'casa/comedor/2'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: comedor_3
+      name: 'Comedor 3'
+      state_topic: 'casa/comedor/3'
+      command_topic: 'casa/comedor/3'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: comedor_4
+      name: 'Comedor 4'
+      state_topic: 'casa/comedor/4'
+      command_topic: 'casa/comedor/4'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: sala_comedor
+      name: 'Sala comedor'
+      state_topic: 'casa/sala/comedor'
+      command_topic: 'casa/sala/comedor'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: cocina_1
+      name: 'Cocina 1'
+      state_topic: 'casa/cocina/1'
+      command_topic: 'casa/cocina/1'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: cocina_2
+      name: 'Cocina 2'
+      state_topic: 'casa/cocina/2'
+      command_topic: 'casa/cocina/2'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: sala_cocina
+      name: 'Sala cocina'
+      state_topic: 'casa/sala/cocina'
+      command_topic: 'casa/sala/cocina'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      
+    - unique_id: altar
+      name: 'Altar'
+      state_topic: 'casa/altar'
+      command_topic: 'casa/altar'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
