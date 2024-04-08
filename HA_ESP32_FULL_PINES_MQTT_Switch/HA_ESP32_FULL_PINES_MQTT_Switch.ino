@@ -37,10 +37,10 @@ const PROGMEM char* MQTT_USER = "XXXXXXXXXXXXXXXXXXXX";
 const PROGMEM char* MQTT_PASSWORD = "XXXXXXXXXXXXXXXXXXXX";
 
 
-const PROGMEM byte pinLightList[14] = {2, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 25, 26, 27};  //4, 5, 12, 32, 33
-boolean statePinList[14] = {false, false, false, false, false, false, false, false, false, false, false, false, false, false};  
+const PROGMEM byte pinLightList[14] = {2, 4, 5, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 25, 26, 27, 32, 33};  
+boolean statePinList[14] = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false};  
 // MQTT: topics
-const PROGMEM char* topicList[14] = { "casa/terraza/medio", "casa/terraza/derecha", "casa/banio", "casa/sala/banio", "casa/sala/chimenea/derecha", "casa/comedor/1", "casa/comedor/2", "casa/comedor/3", "casa/comedor/4", "casa/sala/comedor", "casa/cocina/1", "casa/cocina/2", "casa/sala/cocina", "casa/altar" };
+const PROGMEM char* topicList[14] = { "topico1", "topico2", "topico3", "topico4", "topico5", "topico6", "topico7", "topico8", "topico9", "topico10", "topico11", "topico12", "topico13", "topico14", "topico15", "topico16", "topico17", "topico18", "topico19" };
 
 // payloads by default (on/off)
 const char* LIGHT_ON = "ON";
@@ -57,7 +57,7 @@ void callback(char* p_topic, byte* p_payload, unsigned int p_length) {
     payload.concat((char)p_payload[i]);
   }
   
-  for(int i = 0; i < 14; i++){
+  for(int i = 0; i < sizeof(pinLightList) - 1; i++){
     // handle message topic
     if (String(topicList[i]).equals(p_topic)) {
       // test if the payload is equal to "ON" or "OFF"
@@ -84,7 +84,7 @@ void reconnect() {
     if (client.connect(MQTT_CLIENT_ID, MQTT_USER, MQTT_PASSWORD)) {
       //Serial.println("INFO: connected");
       // ... and resubscribe
-      for(int i = 0; i < 14; i++){
+      for(int i = 0; i < sizeof(pinLightList) - 1; i++){
         client.subscribe(topicList[i]);
       }
     } else {
@@ -103,7 +103,7 @@ void setup() {
   Serial.begin(115200);
 
   // init the led
-  for(int i = 0; i < 14; i++){
+  for(int i = 0; i < sizeof(pinLightList) - 1; i++){
     pinMode(pinLightList[i], OUTPUT);
   }
 
