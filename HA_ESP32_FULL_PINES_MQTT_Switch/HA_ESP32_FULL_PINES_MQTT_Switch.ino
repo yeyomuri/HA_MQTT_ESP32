@@ -15,7 +15,7 @@
     - GND - LED - Resistor 220 Ohms - D1/GPIO5
     - Module Relay 5V - D1/GPIO5
 
-   Aurelio M. - v1.1 - 06.2024
+   Aurelio M. - v1.1 - 04.2024
    If you like this example, please add a star! Thank you!
    https://github.com/yeyomuri/HA_MQTT_ESP32
 */
@@ -26,22 +26,20 @@
 #define MQTT_VERSION MQTT_VERSION_3_1_1
 
 // Credenciales WiFi
-const PROGMEM char* WIFI_SSID = "FamiliaMuri";
-const PROGMEM char* WIFI_PASSWORD = "F4m1l14Mur!";
+const PROGMEM char* WIFI_SSID = "XXXXXXXXXXXXXXXXXXXX";
+const PROGMEM char* WIFI_PASSWORD = "XXXXXXXXXXXXXXXXXXXX";
 
 // Credenciales MQTT
 const PROGMEM char* MQTT_CLIENT_ID = "TouchSwitchSensor";
-const PROGMEM char* MQTT_SERVER_IP = "192.168.1.100";
+const PROGMEM char* MQTT_SERVER_IP = "XXXXXXXXXXXXXXXXXXXX";
 const PROGMEM uint16_t MQTT_SERVER_PORT = 1883;
-const PROGMEM char* MQTT_USER = "lupanto";
-const PROGMEM char* MQTT_PASSWORD = "lupanto2024";
+const PROGMEM char* MQTT_USER = "XXXXXXXXXXXXXXXXXXXX";
+const PROGMEM char* MQTT_PASSWORD = "XXXXXXXXXXXXXXXXXXXX";
 
-// MQTT: topics
-const char* MQTT_LIGHT_STATE_TOPIC = "office/light1/status";
-const char* MQTT_LIGHT_COMMAND_TOPIC = "office/light1/switch";
 
 const PROGMEM byte pinLightList[14] = {2, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 25, 26, 27};  //4, 5, 12, 32, 33
 boolean statePinList[14] = {false, false, false, false, false, false, false, false, false, false, false, false, false, false};  
+// MQTT: topics
 const PROGMEM char* topicList[14] = { "casa/terraza/medio", "casa/terraza/derecha", "casa/banio", "casa/sala/banio", "casa/sala/chimenea/derecha", "casa/comedor/1", "casa/comedor/2", "casa/comedor/3", "casa/comedor/4", "casa/sala/comedor", "casa/cocina/1", "casa/cocina/2", "casa/sala/cocina", "casa/altar" };
 
 // payloads by default (on/off)
