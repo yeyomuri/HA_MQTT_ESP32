@@ -1,18 +1,21 @@
-/*********
-  Rui Santos
-  Complete project details at https://RandomNerdTutorials.com/esp32-cam-video-streaming-web-server-camera-home-assistant/
-  
-  IMPORTANT!!! 
-   - Select Board "AI Thinker ESP32-CAM"
-   - GPIO 0 must be connected to GND to upload a sketch
-   - After connecting GPIO 0 to GND, press the ESP32-CAM on-board RESET button to put your board in flashing mode
-  
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files.
+/*
+   MQTT Lights for Home-Assistant - NodeMCU (ESP32)
+   https://home-assistant.io/components/light.mqtt/
 
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-*********/
+   Libraries :
+    - ESP8266 core for Arduino : https://github.com/esp8266/Arduino
+    - PubSubClient : https://github.com/knolleary/pubsubclient
+
+   Sources :
+    - File > Examples > ES8266WiFi > WiFiClient
+    - File > Examples > PubSubClient > mqtt_auth
+    - File > Examples > PubSubClient > mqtt_esp8266
+
+
+   Aurelio M. - v1.1 - 04.2024
+   If you like this example, please add a star! Thank you!
+   https://github.com/yeyomuri/HA_MQTT_ESP32
+*/
 
 #include "esp_camera.h"
 #include <WiFi.h>
