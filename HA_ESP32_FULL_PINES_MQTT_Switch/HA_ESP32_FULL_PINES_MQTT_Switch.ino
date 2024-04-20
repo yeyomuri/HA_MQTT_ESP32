@@ -11,9 +11,6 @@
     - File > Examples > PubSubClient > mqtt_auth
     - File > Examples > PubSubClient > mqtt_esp8266
 
-   Schematic :
-    - GND - LED - Resistor 220 Ohms - D1/GPIO5
-    - Module Relay 5V - D1/GPIO5
 
    Aurelio M. - v1.1 - 04.2024
    If you like this example, please add a star! Thank you!
