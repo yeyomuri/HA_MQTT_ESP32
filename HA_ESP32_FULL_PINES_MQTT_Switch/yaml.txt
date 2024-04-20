@@ -1,153 +1,181 @@
 mqtt:
   switch:
     - unique_id: topico1
-      name: Topico1'
+      name: Topico1
       state_topic: 'topico1'
       command_topic: 'topico1'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico2
-      name: Topico2'
+      name: Topico2
       state_topic: 'topico2'
       command_topic: 'topico2'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico3
-      name: Topico3'
+      name: Topico3
       state_topic: 'topico3'
       command_topic: 'topico3'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico4
-      name: Topico4'
+      name: Sala router
       state_topic: 'topico4'
       command_topic: 'topico4'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico5
-      name: Topico5'
+      name: Topico5
       state_topic: 'topico5'
       command_topic: 'topico5'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico6
-      name: Topico6'
+      name: Sala habitacion principal
       state_topic: 'topico6'
       command_topic: 'topico6'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico7
-      name: Topico7'
+      name: Sala habitacion secundaria
       state_topic: 'topico7'
       command_topic: 'topico7'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
-
+      qos: 2
+      retain: yes
+      
     - unique_id: topico8
-      name: Topico8'
+      name: Topico8
       state_topic: 'topico8'
       command_topic: 'topico8'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico9
-      name: Topico9'
+      name: Topico9
       state_topic: 'topico9'
       command_topic: 'topico9'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico10
-      name: Topico10'
+      name: Porton exterior
       state_topic: 'topico10'
       command_topic: 'topico10'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico11
-      name: Topico11'
+      name: Topico11
       state_topic: 'topico11'
       command_topic: 'topico11'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico12
-      name: Topico12'
+      name: Banio habitacion
       state_topic: 'topico12'
       command_topic: 'topico12'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico13
-      name: Topico13'
+      name: Habitacion secundaria 1
       state_topic: 'topico13'
       command_topic: 'topico13'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico14
-      name: Topico14'
+      name: Habitacion principal 2
       state_topic: 'topico14'
       command_topic: 'topico14'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
-
+      qos: 2
+      retain: yes
+      
     - unique_id: topico15
-      name: Topico15'
+      name: Terraza derecha
       state_topic: 'topico15'
       command_topic: 'topico15'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico16
-      name: Topico16'
+      name: Topico16
       state_topic: 'topico16'
       command_topic: 'topico16'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
-
+      qos: 2
+      retain: yes 
+      
     - unique_id: topico17
-      name: Topico17'
+      name: Habitacion principal 1
       state_topic: 'topico17'
       command_topic: 'topico17'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
+      qos: 2
+      retain: yes
 
     - unique_id: topico18
-      name: Topico18'
+      name: Estudio
       state_topic: 'topico18'
       command_topic: 'topico18'
       optimistic: false
       payload_on: "ON"
       payload_off: "OFF"
-
-    - unique_id: topico19
-      name: Topico19'
-      state_topic: 'topico19'
-      command_topic: 'topico19'
-      optimistic: false
-      payload_on: "ON"
-      payload_off: "OFF"
+      qos: 2
+      retain: yes
