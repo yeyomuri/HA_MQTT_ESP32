@@ -38,9 +38,9 @@ const PROGMEM char* MQTT_PASSWORD = "XXXXXXXXXXXXXXXXXXXX";
 
 
 const PROGMEM byte pinLightList[18] = {2, 4, 5, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 25, 26, 27, 32};  
-boolean statePinList[18] = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false};  
+boolean statePinList[18] = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false};  
 // MQTT: topics
-const PROGMEM char* topicList[18] = { "topico1", "topico2", "topico3", "topico4", "topico5", "topico6", "topico7", "topico8", "topico9", "topico10", "topico11", "topico12", "topico13", "topico14", "topico15", "topico16", "topico17", "topico18", "topico19" };
+const PROGMEM char* topicList[18] = { "topico1", "topico2", "topico3", "topico4", "topico5", "topico6", "topico7", "topico8", "topico9", "topico10", "topico11", "topico12", "topico13", "topico14", "topico15", "topico16", "topico17", "topico18"};
 
 // payloads by default (on/off)
 const char* LIGHT_ON = "ON";
