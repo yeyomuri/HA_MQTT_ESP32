@@ -5,12 +5,7 @@
   IMPORTANT!!! 
    - Select Board "AI Thinker ESP32-CAM"
    - Use Touch Sensor Pins: 4, 12, 13, 14, 15, 27, 32, 33
-   
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files.
 
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
 *********/
 
 #include <WiFi.h>
