@@ -1,4 +1,7 @@
 # Multiple switch controll with MQTT 
+
+18 pin controll output with esp32 model DEVKIT V1 and MQTT comunication 
+
 ## Materials
 - [ESP32 DEVKIT V1](https://www.aliexpress.us/item/2255800094862861.html?spm=a2g0o.productlist.main.1.1fa72dc4LMciOA&algo_pvid=23bb5fd8-db7a-4aec-9c17-81cfd1235277&algo_exp_id=23bb5fd8-db7a-4aec-9c17-81cfd1235277-0&pdp_npi=4%40dis%21COP%2116466.48%213985.77%21%21%214.09%210.99%21%402103080617136369801537107e58c8%2112000028453956256%21sea%21US%212374125126%21AC&curPageLogUid=tTntfMVmeBg9&utparam-url=scene%3Asearch%7Cquery_from%3A)
 - [ESP32 Expansion Board](https://www.aliexpress.us/item/3256805731036354.html?spm=a2g0o.productlist.main.3.3cf9106e1GnJk8&algo_pvid=577f2126-9794-4409-8b01-29accbbb9aa3&algo_exp_id=577f2126-9794-4409-8b01-29accbbb9aa3-1&pdp_npi=4%40dis%21COP%219662.48%219662.48%21%21%212.40%212.40%21%402101c80217136370870231058e78af%2112000034841964242%21sea%21US%212374125126%21AC&curPageLogUid=Vm1bkpzIBgYs&utparam-url=scene%3Asearch%7Cquery_from%3A)
