@@ -54,7 +54,7 @@ void callback(char* p_topic, byte* p_payload, unsigned int p_length) {
     payload.concat((char)p_payload[i]);
   }
   
-  for(int i = 0; i < sizeof(pinLightList) - 1; i++){
+  for(int i = 0; i < sizeof(pinLightList); i++){
     // handle message topic
     if (String(topicList[i]).equals(p_topic)) {
       // test if the payload is equal to "ON" or "OFF"
@@ -81,7 +81,7 @@ void reconnect() {
     if (client.connect(MQTT_CLIENT_ID, MQTT_USER, MQTT_PASSWORD)) {
       //Serial.println("INFO: connected");
       // ... and resubscribe
-      for(int i = 0; i < sizeof(pinLightList) - 1; i++){
+      for(int i = 0; i < sizeof(pinLightList); i++){
         client.subscribe(topicList[i]);
       }
     } else {
@@ -100,7 +100,7 @@ void setup() {
   Serial.begin(115200);
 
   // init the led
-  for(int i = 0; i < sizeof(pinLightList) - 1; i++){
+  for(int i = 0; i < sizeof(pinLightList); i++){
     pinMode(pinLightList[i], OUTPUT);
   }
 
