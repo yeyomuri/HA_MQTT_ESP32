@@ -1,0 +1,82 @@
+mqtt:
+  switch:
+    - unique_id: topico1
+      name: Topico1
+      state_topic: 'topico1'
+      command_topic: 'topico1'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+
+    - unique_id: topico2
+      name: Topico2
+      state_topic: 'topico2'
+      command_topic: 'topico2'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+
+    - unique_id: topico3
+      name: Topico3
+      state_topic: 'topico3'
+      command_topic: 'topico3'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+
+    - unique_id: topico4
+      name: Topico4
+      state_topic: 'topico4'
+      command_topic: 'topico4'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+
+    - unique_id: topico5
+      name: Topico5
+      state_topic: 'topico5'
+      command_topic: 'topico5'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+
+    - unique_id: topico6
+      name: Topico6
+      state_topic: 'topico6'
+      command_topic: 'topico6'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+
+    - unique_id: topico7
+      name: Topico7
+      state_topic: 'topico7'
+      command_topic: 'topico7'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+      
+    - unique_id: topico8
+      name: Topico8
+      state_topic: 'topico8'
+      command_topic: 'topico8'
+      optimistic: false
+      payload_on: "ON"
+      payload_off: "OFF"
+      qos: 2
+      retain: yes
+
