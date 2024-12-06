@@ -3,7 +3,7 @@
   Touch Sensor Pins Controller with MQTT
   
   IMPORTANT!!! 
-   - Select Board "AI Thinker ESP32-CAM"
+   - Select Board "ESP32 DEV MODULE"
    - Use Touch Sensor Pins: 4, 12, 13, 14, 15, 27, 32, 33
 
 *********/
@@ -16,11 +16,12 @@ const PROGMEM char* WIFI_SSID = "XXXXXXXXXXXXXXXXXXXX";
 const PROGMEM char* WIFI_PASSWORD = "XXXXXXXXXXXXXXXXXXXX";
 
 // Credenciales MQTT
-const PROGMEM char* MQTT_CLIENT_ID = "TouchSwitchSensor";
+const PROGMEM char* MQTT_CLIENT_ID = "XXXXXXXXXXXXXXXXXXXX";
 const PROGMEM char* MQTT_SERVER_IP = "XXXXXXXXXXXXXXXXXXXX";
 const PROGMEM uint16_t MQTT_SERVER_PORT = 1883;
 const PROGMEM char* MQTT_USER = "XXXXXXXXXXXXXXXXXXXX";
 const PROGMEM char* MQTT_PASSWORD = "XXXXXXXXXXXXXXXXXXXX";
+
 
 // payload por defecto
 const PROGMEM char* MOTION_ON = "ON";
@@ -36,9 +37,9 @@ unsigned long lastDebounceTime = 0;
 unsigned long debounceDelay = 50;
 
 //Arrays de pines de Touch y topicos
-const PROGMEM byte pinTouch[8] = {4, 12, 13, 14, 15, 27, 32, 33}; 
-const PROGMEM char* topico[8] = {"casa/habitacion/touch", "casa/banio/touch", "casa/cocina/touch", "casa/comedor/touch", "casa/garaje/touch", "casa/sala/touch", "casa/patio/touch", "casa/jardin/touch"}; 
-boolean estadoToogle[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+const PROGMEM byte pinTouch[7] = {4, 12, 13, 14, 15, 27, 32}; 
+const PROGMEM char* topico[7] = {"touch1", "touch2", "touch3", "touch4", "touch5", "touch6", "touch7"}; 
+boolean estadoToogle[7] = {0, 0, 0, 0, 0, 0, 0};
 byte i = 0;
 
 WiFiClient wifiClient;
@@ -93,7 +94,7 @@ void loop() {
   }
   client.loop();
    
-  for(i = 0; i < 8; i++){ //Reemplazar por while
+  for(i = 0; i < sizeof(pinTouch); i++){ //Reemplazar por while
     if (touchRead(pinTouch[i]) < 40){
       estadoContacto = HIGH;
       break; //Captura posicion de pinTouch en la variable i
@@ -129,3 +130,5 @@ void loop() {
   // Estado final del sensor touch
   lastButtonState = estadoContacto;
 }
+
+
