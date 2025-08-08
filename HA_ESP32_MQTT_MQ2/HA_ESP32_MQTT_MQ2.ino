@@ -28,8 +28,8 @@
 #include "esp_http_server.h"
 
 //Replace with your network credentials
-const char* ssid = "TP-LINK_877C";
-const char* password = "20432447";
+const char* ssid = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const char* password = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
 #define PART_BOUNDARY "123456789000000000000987654321"
 
@@ -265,3 +265,4 @@ void setup() {
 void loop() {
   delay(1);
 }
+
